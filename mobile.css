@@ -22,5 +22,6 @@
 .map {
     display: flex;
     flex-direction: column;
-    padding: 2rem
+    padding: 2rem;
+    margin: auto;
 }
