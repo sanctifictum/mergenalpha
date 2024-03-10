@@ -1,0 +1,21 @@
+#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    background-color: rgba(42,42,42,1);
+    color: #fff;
+    padding: 0.25rem, 0.50rem;
+    overflow:hidden;
+    
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 0.5rem;
+}

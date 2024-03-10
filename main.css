@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background-color: rgba(242,242,242,1);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+  
+a {
+ text-decoration: none;
+ color: #fff;
+}
+#navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 1920px;
+    background-color: rgba(42,42,42,1);
+    color: #fff;
+    padding: auto;
+    overflow:hidden;
+    margin: auto;
+    
+}
+#navbar h1 {
+    text-align: center;
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+}
+#navbar img {
+    align-self: center;
+    height: 5rem;
+    width: 5rem;
+}
+#navbar ul {
+    background-color: rgb(40,40,40);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+#navbar ul li a {
+    padding: 0.5rem 0.50rem;
+}
+
+#navbar ul li a:hover {
+    background-color: rgba(32,32,32,1);
+    border-radius: 5px;
+}
+
+#progeo {
+    margin: 1rem;
+    color: rgb(40,40,40);
+    font-size: larger;
+    text-shadow: #000;
+}
+
+.container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+    max-height: 10rem;
+}
+
+#search-input {
+    background-color: rgb(242, 242,242);
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+    width: 300px;
+    border-radius: 8px;
+}
+
+#search-input:hover {
+    background-color: rgb(232, 232,232);
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+    width: 300px;
+    border-radius: 8px;
+}
+
+#search-button {
+    margin-left: 0.5rem;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(42,42,42,1);
+    border-radius: 12px;
+}
+
+.map-container {
+    flex: 1;
+}
+
+#poi-details {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    display: none;
+}
+.map {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    padding: 2rem
+}
+
+.searchpart {
+    margin: 2rem;
+}
