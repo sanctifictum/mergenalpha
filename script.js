@@ -17,12 +17,10 @@ function showPOIDetails(poi) {
 }
 
 function searchPOI(searchTerm) {
-  // Use Nominatim API with additional parameters for broader search
+  // Replace with the actual Nominatim API URL and parameters
   const url = new URL('https://nominatim.openstreetmap.org/search');
   url.searchParams.set('q', searchTerm);
   url.searchParams.set('format', 'json'); // Request JSON format
-  url.searchParams.set('street', 'yes'); // Search for streets
-  url.searchParams.set('amenity', 'yes'); // Search for POIs (amenities)
 
   fetch(url)
       .then(response => response.json())
@@ -32,7 +30,6 @@ function searchPOI(searchTerm) {
               const location = firstResult.lat; // Extract latitude
               const longitude = firstResult.lon; // Extract longitude
               map.setView([location, longitude], 15); // Center map on found location
-              showPOIDetails(firstResult); // Assuming data includes name and description
           } else {
               alert("No location found for your search term.");
           }
@@ -43,7 +40,7 @@ function searchPOI(searchTerm) {
       });
 }
 
-// Event listener for Enter key press on search input
+// Add event listener for Enter key press on search input
 searchInput.addEventListener('keypress', (event) => {
   if (event.key === 'Enter') {
     const searchTerm = searchInput.value;
